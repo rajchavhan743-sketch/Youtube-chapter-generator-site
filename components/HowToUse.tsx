@@ -26,7 +26,7 @@ const HowToUse: React.FC = () => {
     <section id="how-to-use" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">How It Works in 3 Simple Steps</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Generate Perfect Descriptions in 3 Simple Steps</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <StepCard
@@ -38,14 +38,14 @@ const HowToUse: React.FC = () => {
           <StepCard
             stepNumber="2" 
             icon={<LinkIcon />}
-            title="Paste Your Video Link"
-            description="Open the extension and paste the URL of the YouTube video you want to add chapters to."
+            title="Paste Your URL"
+            description="Grab any YouTube video link and paste it into the extension."
           />
           <StepCard
             stepNumber="3"
             icon={<ClipboardCopyIcon />}
-            title="Generate & Copy"
-            description="Click 'Generate Chapters'. Our AI will create the timestamps and titles. Simply click 'Copy' and paste them into your YouTube description."
+            title="Copy & Publish"
+            description="Copy the generated title, hashtags, and chapters directly to your YouTube description."
           />
         </div>
       </div>

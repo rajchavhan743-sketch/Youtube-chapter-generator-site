@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { SparklesIcon, ClipboardIcon, ClockIcon } from './icons';
+import { LightbulbIcon, HashtagIcon, ClockIcon } from './icons';
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -24,23 +24,23 @@ const Features: React.FC = () => {
     <section id="features" className="py-20 bg-gray-900/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">The Easiest Way to Create Chapters</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Everything You Need to Optimize Your Videos</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <FeatureCard 
-            icon={<SparklesIcon />}
-            title="AI-Powered Generation"
-            description="Our smart AI analyzes your video's transcript to create accurate and relevant chapter titles and timestamps automatically."
+            icon={<LightbulbIcon />}
+            title="AI-Powered Titles"
+            description="Generate catchy, SEO-friendly titles designed to increase click-through rates and improve discoverability in YouTube search."
           />
           <FeatureCard 
-            icon={<ClipboardIcon />}
-            title="One-Click Copy & Paste"
-            description="Get your formatted chapters with a single click, ready to be pasted directly into your YouTube video description."
+            icon={<HashtagIcon />}
+            title="Relevant Hashtags"
+            description="Get a list of highly relevant and trending hashtags to help your video reach a wider audience and appear in more search queries."
           />
           <FeatureCard 
             icon={<ClockIcon />}
-            title="Generation History"
-            description="Never lose your work. The extension automatically saves your recent generations for easy access later."
+            title="Automatic Timestamps"
+            description="Instantly create accurate, timestamped video chapters. Improve viewer experience and boost watch time by making your content easy to navigate."
           />
         </div>
       </div>

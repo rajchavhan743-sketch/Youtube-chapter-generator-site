@@ -15,28 +15,20 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => (
 const FAQ: React.FC = () => {
   const faqs = [
     {
-      question: "How does the AI chapter generation work?",
-      answer: "Our extension leverages the power of the best and most premium AI models available, including Anthropic Claude Opus 4.1 and GPT-5. These models analyze the video's transcript to identify key topics and transitions, ensuring highly accurate and relevant chapter titles and timestamps."
+      question: "Is the extension really free?",
+      answer: "Yes! You can generate up to 10 video descriptions every month, completely free. For unlimited use, you can upgrade to our Pro plan."
     },
     {
-      question: "Is this extension safe to use? Will it access my YouTube account?",
-      answer: "Yes, it's completely safe. The extension does not require you to log in to your YouTube account and does not ask for any permissions to access your personal data. It only reads publicly available video information and transcripts."
+      question: "What browsers are supported?",
+      answer: "Currently, we officially support Google Chrome. Support for other browsers is coming soon!"
     },
     {
-      question: "What languages does the extension support?",
-      answer: "Our extension supports multiple languages. Thanks to our advanced AI models, we can accurately process transcripts and generate chapters for videos in a wide variety of languages, not just English."
-    },
-    {
-      question: "What happens when I run out of free generations for the month?",
-      answer: "The Free plan includes 5 generations per month. If you reach this limit, you will need to wait until the first day of the next month for your quota to reset, or you can upgrade to the Pro plan for unlimited generations."
-    },
-    {
-      question: "Can I edit the chapters after they are generated?",
-      answer: "Absolutely! The extension provides you with a fully formatted text block. You can copy it and then paste it into any text editor (or directly into the YouTube description box) to make any edits or adjustments you like before saving."
-    },
-     {
       question: "How accurate are the generated chapters?",
-      answer: "The accuracy is very high, especially for videos with clear audio and a well-structured narrative. By using top-tier AI like Claude Opus 4.1 and GPT-5, we ensure the highest possible accuracy, even for videos with background noise or overlapping speech."
+      answer: "Our AI analyzes the video's official transcript to provide the most accurate timestamps possible. Accuracy is highest on videos with clear audio and captions."
+    },
+    {
+      question: "Is my data safe?",
+      answer: "Absolutely. We only require your email for login and do not share your data. All payments are handled securely through our payment processor, Stripe."
     }
   ];
 
@@ -44,7 +36,7 @@ const FAQ: React.FC = () => {
     <section id="faq" className="py-20 bg-gray-900/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Frequently Asked Questions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Have Questions? We Have Answers.</h2>
         </div>
         <div className="max-w-4xl mx-auto space-y-6">
           {faqs.map((faq, index) => (

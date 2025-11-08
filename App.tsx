@@ -5,6 +5,7 @@ import Features from './components/Features';
 import HowToUse from './components/HowToUse';
 import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
+import CTA from './components/CTA';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -13,10 +14,11 @@ const App: React.FC = () => {
       <Header />
       <main>
         <Hero />
-        <Features />
         <HowToUse />
+        <Features />
         <Pricing />
         <FAQ />
+        <CTA />
       </main>
       <Footer />
     </div>
